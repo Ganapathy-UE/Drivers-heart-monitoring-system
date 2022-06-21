@@ -1,0 +1,60 @@
+ #sample program for sparkle....HEARTRATE SENSOR IN CAR....
+###############################
+import random
+import time
+#SENSOR 
+print('SPARKLE PROJECT')
+print('BY GANAPATHY ,AKHIL, AKSHAY BAL')
+highest_value=120
+lowest_value =0
+inpu=random.randint(lowest_value,highest_value)
+inp=raw_input('Hi there....enter your age')
+age=int(inp)
+##########################################################
+# The values given for HEARTRATE is not standard ....Program is done using random values for HEARTRATE'S.
+if 18<=age<=30:
+ print('YOUR HEARTBEAT SENSED BY SENSOR IS',inpu,'beats/min')
+ heartrate=int(inpu)
+ if heartrate<=60:
+  print('wait...')
+  time.sleep(5)
+  print('your heart is too low...cant drive...car shifting to autonomous mode')
+ elif heartrate>=100:
+  print('wait')
+  time.sleep(5)
+  print('heart rate too high...medical emergency...car shifting to autonomous mode')
+ else :
+  print('wait...')
+  time.sleep(5)
+  print('your seems to be fine...Enjoy your drive') 
+####################
+if 31<=age<=40:
+ print('wait...')
+ time.sleep(5)
+ print('YOUR HEARTBEAT SENSED BY SENSOR IS',inpu,'beats/min')
+ heartrate=int(inpu)
+ if heartrate<=40:
+  print('wait...')
+  time.sleep(5)
+  print('your heart rate is seems to be low.....car switching to autonomous mode')
+ elif heartrate>=100:
+  print('wait...')
+  time.sleep(5)
+  print('your heart rate is shooting.....emergency....shifting to autonomous mode....car will stop in few minutes')
+ else :
+  print('wait...')
+  time.sleep(5)
+  print('Good to go .....Enjoy the ride')
+elif age>=41 :
+ print('wait...')
+ time.sleep(5)
+ print('YOUR HEARTBEAT SENSED BY SENSOR IS',inpu,'beats/min')
+ heartrate=int(inpu)
+ if heartrate<=25:
+  print('immediate trackback....car shifting to autonmous mode')
+ elif heartrate>=100:
+  print('Heartbeat on higher side ....Vehicle switching to autonmous mode')
+ else :
+  print('.....you seems to be fine...enjoy the ride') 
+elif age<18:
+ print('illegal buddy...YOU CANT DRIVE')
